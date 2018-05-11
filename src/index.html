@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    function fn(num) {
+        //num = num.replace(/(\d{14})\d{4}/, "$1****");
+        num = num.replace(/(\d{10})(\d{4})\d{4}/, '$1<b>$2</b>****');
+        return num;
+    }
+    console.log(fn('411421199603035221'));
+</script>
